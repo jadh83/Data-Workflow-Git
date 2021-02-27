@@ -45,7 +45,8 @@ analytic_phil_gender$school.number <- paste0("00000", analytic_phil_gender$schoo
 analytic <- left_join(analytic_phil_keystone, analytic_phil_gender, by = "school.number")
 
 # Drop variables in merged dataset
-analytic <- select(analytic, school.number, school.name.x, lea.type, number.scored, percent.advanced, percent.proficient, percent.basic, percent.below.basic)
+analytic <- select(analytic, school.number, school.name.x, lea.type, number.scored, 
+                   percent.advanced, percent.proficient, percent.basic, percent.below.basic)
 
 
 # Plan for dataset
